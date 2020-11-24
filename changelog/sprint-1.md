@@ -1,24 +1,25 @@
 # Scrum Report (Sprint 1)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 18/11/2020 to 24/11/2020
 
 ## Team (Insert your name)
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| NPM           | Name               |
+| ------------- |--------------------|
+| 140810190017  | Saddam Habibi U    |
+| 140810190029  | Rellisa Puspa K    |
+| 140810190049  | Anastasia Victoria |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 3             | 3             |
 
 ## Sprint 1 Backlog
 
-| ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
-| 1.1 | Preparing the x | Jane Doe | DONE |
-| 1.2 | Make the x | John Doe | FAILED |
+| ID  | Title/Desc | Asignee | 
+| --- | ---------- | ------- | 
+| 1.1 | Tampilan grid 9x9 dengan subgrid | Saddam | 
+| 1.2 | Implementasi dasar PBO | Saddam | 
+| 1.3 | Tampilan Tingkat Kesulitan | Rellisa |
 
 ## Retrospective 
 
@@ -27,5 +28,6 @@ Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian t
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 2.1 | Tampilan Tombol Restart | Rellisa |
+| 2.2 | Tampilan String dan Clue | Tasia |
+| 2.3 | Mengacak Angka | Tasia |
