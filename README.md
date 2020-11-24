@@ -14,19 +14,19 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 | 140810190049  | Anastasia Victoria Y |
 
 ## Change log
-- **[Sprint Planning](changelog/sprint-planning.md) - (24 Nov)** 
+- **[Sprint Planning](changelog/sprint-planning.md) - (18 Nov)** 
    - Pencarinan referensi GUI sudoku di Java
    - Diskusi dengan team tentang pembuatan GUI
 
-- **[Sprint 1](changelog/sprint-1.md) - (date from 16 Nov until 22 Nov)** 
+- **[Sprint 1](changelog/sprint-1.md) - (date from 18 Nov until 24 Nov)** 
    - Short changes 1
    - Short changes 2
 
-- **[Sprint 2](changelog/sprint-2.md) - (date from 23 Nov until 29 Nov)** 
+- **[Sprint 2](changelog/sprint-2.md) - (date from 25 Nov until 1 Dec)** 
    - Short changes 1
    - Short changes 2
    
-- **[Sprint 3](changelog/sprint-3.md) - (date from 30 Nov until 6 Dec)** 
+- **[Sprint 3](changelog/sprint-3.md) - (date from 2 Dec until 8 Dec)** 
    - Short changes 1
    - Short changes 2
 
