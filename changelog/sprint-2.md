@@ -11,7 +11,7 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 3             | 3             |
 
 ## Sprint 2 Backlog
 
@@ -19,7 +19,7 @@
 | --- | ---------- | ------- | ------- |
 | 2.1 | Tampilan Tombol Restart | Rellisa | Done |
 | 2.2 | Tampilan String dan Clue | Tasia | Done |
-| 2.3 | Mengacak Angka | Tasia | Done |
+| 2.3 | Mengacak Angka | Saddam | Done |
 
 ## Retrospective 
 
@@ -28,5 +28,7 @@ Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian t
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+| 3.1 | Set angka yang tidak bisa diganti | TBC |
+| 3.2 | Cek input benar/salah | TBC |
+| 3.3 | Highlight grid yang bernilai sama | TBC |
+| 3.4 | Perbaikan tampilan | TBC |

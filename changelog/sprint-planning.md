@@ -16,7 +16,7 @@
 | 1.3 | Tampilan Tingkat Kesulitan | Rellisa |
 | 2.1 | Tampilan Tombol Restart | Rellisa |
 | 2.2 | Tampilan String dan Clue | Tasia |
-| 2.3 | Mengacak Angka | Tasia |
+| 2.3 | Mengacak Angka | Saddam |
 | 3.1 | Set angka yang tidak bisa diganti | TBC |
 | 3.2 | Cek input benar/salah | TBC |
 | 3.3 | Highlight grid yang bernilai sama | TBC |

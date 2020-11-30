@@ -23,11 +23,12 @@
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. 
+Diperlukan perbaikan pada file sprint planning dan sprint-1
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
 | 2.1 | Tampilan Tombol Restart | Rellisa |
 | 2.2 | Tampilan String dan Clue | Tasia |
-| 2.3 | Mengacak Angka | Tasia |
+| 2.3 | Mengacak Angka | Saddam |
