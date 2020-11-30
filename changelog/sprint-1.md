@@ -24,7 +24,7 @@
 ## Retrospective 
 
 Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. 
-Diperlukan perbaikan pada file sprint planning dan sprint-1
+Diperlukan perbaikan pada file sprint planning dan sprint-1.
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
