@@ -16,9 +16,10 @@
 ## Sprint 2 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
-| 2.1 | Preparing the x | Jane Doe | DONE |
-| 2.2 | Make the x | John Doe | FAILED |
+| --- | ---------- | ------- | ------- |
+| 2.1 | Tampilan Tombol Restart | Rellisa | Done |
+| 2.2 | Tampilan String dan Clue | Tasia | Done |
+| 2.3 | Mengacak Angka | Tasia | Done |
 
 ## Retrospective 
 
