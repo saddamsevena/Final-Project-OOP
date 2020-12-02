@@ -1,67 +1,56 @@
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import javax.swing.*;
+// import class untuk mengacak angka dalam tile Sudoku
+import java.util.Random;
 
-public class SudokuBoard {
-    private static JTextField gridd [][] = new JTextField[9][9];
+public class SudokuPuzzle {
+    // deklarasi jumlah grid
+    public static final int grid = 9;    // ukuran grid 9x9
+    public static final int subgrid = 3; // ukuran subgrid 3x3
 
-    public SudokuBoard (){
+    public static Random random = new Random();     // instansiasi objek dari class Random
 
-        JMenuBar menuBar = new JMenuBar();
-        JMenu menu = new JMenu("Menu");
-        menuBar.add(menu);
-        JMenuItem newLevel = new JMenuItem("Select New Level");
-        menu.add(newLevel);
-        JMenuItem reset = new JMenuItem("Reset");
-        menu.add(reset);
-        JMenuItem exit = new JMenuItem("Exit");
-        menu.add(exit);
+    // inisialisasi elemen dari setiap tile
+    // array dg index puzzle 0-8
+    private static int[][] sudokupuzzle = {
+        { 5, 9, 8, 2, 7, 4, 3, 6, 1 },
+        { 4, 7, 2, 1, 6, 3, 9, 5, 8 },
+        { 1, 3, 6, 8, 5, 9, 2, 4, 7 },
+        
+        { 3, 6, 1, 9, 2, 7, 4, 8, 5 },
+        { 2, 4, 7, 6, 8, 5, 1, 3, 9 },
+        { 9, 8, 5, 4, 3, 1, 7, 2, 6 },
+        
+        { 7, 2, 3, 5, 1, 8, 6, 9, 4 },
+        { 8, 1, 9, 3, 4, 6, 5, 7, 2 },
+        { 6, 5, 4, 7, 9, 2, 8, 1, 3 }
+    };
 
-        exitaction e = new exitaction();
-        newLevelaction d = new newLevelaction();
- 
-        exit.addActionListener(e);
-        newLevel.addActionListener(d);
+    private static int[][] generateSudoku() {
+        int[] rowTemplate;
+        for(int i=0; i<10; i++) {
+            // acak nomor baris 1-9
+            // utk i=0. misal dirandom dan didapat rowNumber = 1
+            // utk i=1. misal dirandom dan didapat rowNumber = 2
+            int rowNumber = (random.nextInt(subgrid));
+            int newRow = (rowNumber*subgrid) / grid;
+            // tukar baris 
+            rowTemplate = sudokupuzzle[rowNumber];
+            sudokupuzzle[rowNumber] = sudokupuzzle[newRow];
+            sudokupuzzle[newRow] = rowTemplate;
+        }
+        return sudokupuzzle;
+    }
 
-		JFrame frame = new JFrame("Sudoku");
-		frame.setSize(600,600);
-		JPanel board = new JPanel();
-        board.setLayout(new GridLayout(3, 3));
-        board.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-        JPanel grid = new JPanel();
-            grid.setLayout(new GridLayout(3, 3));
-            for (int i2 = 0; i2 < 3; i2++) {
-            for (int j2 = 0; j2 < 3; j2++) {
-                gridd[i][j]=new JTextField(1);
-                grid.add(gridd[i][j]);
-            }
-            }
-            grid.setBorder(BorderFactory.createEmptyBorder(2,1,1,2));
-            grid.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-            grid.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.BOLD, 22));
-		    grid.setFocusable(false);
-            board.add(grid);
+    public static int[][] getPuzzle() { //mereturn puzzle sudoku 
+        return generateSudoku(); 
+    }
+
+    private static int[][] generateBlankPuzzle() {
+        for(int i=0; i<subgrid*subgrid; i++){
+            for(int j=0; j<subgrid*subgrid; j++) {
+                sudokupuzzle[i][j] = (i*subgrid + i/subgrid + j) % (subgrid*subgrid) + 1;
             }
         }
+        return sudokupuzzle;
+    }
 
-        frame.getContentPane().add(board);
-        frame.setJMenuBar(menuBar);
-        frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
-    }
-    public class exitaction implements ActionListener{
-        public void actionPerformed (ActionEvent e){
-            System.exit(0);
-        }
-    }
- 
-    public class newLevelaction implements ActionListener{
-        public void actionPerformed (ActionEvent e){
-            Level select = new Level(); 
-        }
-    }
-    
 }
