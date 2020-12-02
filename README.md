@@ -19,12 +19,12 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - Diskusi dengan team tentang pembuatan GUI
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from 18 Nov until 24 Nov)** 
-   - Short changes 1
-   - Short changes 2
+   - Memulai pembuatan board
+   - Pembuatan menu di board dan main java untuk menjalankan
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from 25 Nov until 1 Dec)** 
-   - Short changes 1
-   - Short changes 2
+   - Pembuatan level dan memasukkannya kedalam GUI
+   - Pengacakan angka serta menyatukan file GUI menjadi satu
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from 2 Dec until 8 Dec)** 
    - Short changes 1
