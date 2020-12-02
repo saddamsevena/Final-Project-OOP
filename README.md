@@ -32,6 +32,21 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Running The App
 
+- Buka folder file program sudoku
+- Buka cmd / terminal lain
+- Compile Program dengan command "javac Sudoku.java"
+- Run Program dengan command "java Sudoku"
+- Jika ingin langsung bermain sesuai level dapat run dengan command "java SUdoku (level)"
+- Sudoku sudah bisa dimainkan dengan 3 pilihan level
+
+## Classes Used
+
+TO;DO
+
+UML image here
+
+## Notable Assumption and Design App Details
+
 - Tampilkan grid ubin dengan besar 9 x 9 yang terdiri dari 3 x 3 sub-grids dimana ubin adalah komponen drawing board.
 - Acak angka di dalam ubin dengan syarat unik (tidak ada angka yang sama pada 1 baris, 1 kolom, dan 1 sub-grids).
 - Lakukan masking terhadap ubin tertentu (angka disembunyikan dan dijadikan text field)
@@ -42,13 +57,3 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
     - Apakah nilai yang dimasukan pada ubin sesuai dengan jawaban, jika sesuai maka ubah warna tulisan menjadi hijau, jika tidak sesuai maka ubah menjadi warna merah
     - Highlight ubin yang sudah berisi angka, jika dalam 1 baris, 1 kolom, atau 1 sub-grids berisi angka yang sama dengan inputan user
 - Buat button “Reset/Restart” untuk mengacak ulang grid dan memulai game baru.
-
-## Classes Used
-
-TO;DO
-
-UML image here
-
-## Notable Assumption and Design App Details
-
-TO;DO
