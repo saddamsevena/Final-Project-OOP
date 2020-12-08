@@ -27,8 +27,8 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - Pengacakan angka serta menyatukan file GUI menjadi satu
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from 2 Dec until 8 Dec)** 
-   - Short changes 1
-   - Short changes 2
+   - Challenge Idea Menu Bar
+   - Penyelesaian Tampilan
 
 ## Running The App
 
