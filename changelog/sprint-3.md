@@ -1,26 +1,29 @@
 # Scrum Report (Sprint 3)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 02/12/2020 to 08/12/2020
 
-## Team (Insert your name)
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+## Team Teman Saddam
+| NPM           | Name               |
+| ------------- |--------------------|
+| 140810190017  | Saddam Habibi U    |
+| 140810190029  | Rellisa Puspa K    |
+| 140810190049  | Anastasia Victoria |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 4             | 4             |
 
 ## Sprint 3 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Preparing the x | Jane Doe | DONE |
-| 3.2 | Make the x | John Doe | FAILED |
+| 3.1 | Set angka yang tidak bisa diganti | Rellisa | Done |
+| 3.2 | Cek input benar/salah | Rellisa | Done |
+| 3.3 | Highlight grid yang bernilai sama | Tasia | Done |
+| 3.4 | Perbaikan tampilan | Saddam | Done |
+| 3.5 | Menu Bar | Tasia | Done |
+
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
-
+Class InputListener berada dalam file Sudoku, karena jika dipisah akan error

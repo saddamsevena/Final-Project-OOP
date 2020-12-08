@@ -36,14 +36,15 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 - Buka cmd / terminal lain
 - Compile Program dengan command "javac Sudoku.java"
 - Run Program dengan command "java Sudoku"
-- Jika ingin langsung bermain sesuai level dapat run dengan command "java SUdoku (level)"
+- Jika ingin langsung bermain sesuai level dapat run dengan command "java Sudoku (level)"
 - Sudoku sudah bisa dimainkan dengan 3 pilihan level
 
 ## Classes Used
 
-TO;DO
+1. Class SudokuPuzzle, merupakan class untuk menginput serta mengacak angka yang ada pada sudoku
+2. Class Sudoku, berfungsi untuk menampilkan tampilan game sudoku dan main class untuk menjalankan permainan sudoku
 
-UML image here
+![UML](/images/UML.jpg)
 
 ## Notable Assumption and Design App Details
 

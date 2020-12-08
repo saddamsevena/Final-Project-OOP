@@ -100,6 +100,28 @@ public class Sudoku extends JFrame {
 		
 		//membuat option menu
 		JMenu MenuBar = new JMenu("Menu");
+		JMenu helpMenu = new JMenu("Help");
+		JMenuItem help = new JMenuItem("Game Instructions");
+	    help.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null,"1. Pada baris harus di isi oleh angka-angka mulai dari 1-9 dan tidak boleh ada angka yang kembar dalam satu baris.\n2. Pada kolom juga begitu harus di isi dengan angka-angka mulai dari 1-9 dan tidak boleh ada angka yang kembar dalam satu kolom.\n3. Pada setiap bagian kotak area dengan ukuran 3 x 3 yang berisi 9 kotak-kotak kecil. Kotak kecil tersebut harus diisi dengan angka 1-9 dan syaratnya tidak boleh ada angka yang berulang pada setiap kotak area.");
+			}
+		});
+		helpMenu.add(help);
+		menu.add(helpMenu);	
+
+		JMenu aboutMenu = new JMenu("About");
+		JMenuItem about = new JMenuItem("Sudoku Game");
+	    about.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null,"Sudoku, juga dikenal Number Place atau Nanpure, adalah sejenis teka-teki logika. \nTujuannya adalah untuk mengisikan angka-angka dari 1 sampai 9, \nke dalam jaring-jaring 9 x 9 yang terdiri dari 9 kotak 3 x 3 tanpa ada angka yang berulang di satu baris, kolom atau kotak");
+			}
+		});
+		aboutMenu.add(about);
+		menu.add(aboutMenu);
+
 	    JMenuItem restartGame = new JMenuItem("Restart Game");
 		MenuBar.add(restartGame);
 		JMenu Level = new JMenu("Difficulty level");
@@ -161,8 +183,7 @@ public class Sudoku extends JFrame {
 				System.exit(0); //exit
 			}
 		});
-	    menu.add(MenuBar);
-			
+		menu.add(MenuBar);
 	
 	    // inisialisasi game
 		initGame(sudokuboard);
@@ -178,21 +199,25 @@ public class Sudoku extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			switch (e.getActionCommand()) {
 			case "Easy":
+				JOptionPane.showMessageDialog(null, "Dasar Newbie");
 				setLevel (5);
 				dispose();
 				new Sudoku();
 				break;
 			case "Medium":
+				JOptionPane.showMessageDialog(null, "Sok Jago");
 				setLevel (7);
 				dispose();
 				new Sudoku();
 				break;
 			case "Hard":
+				JOptionPane.showMessageDialog(null, "Ampun Bang Jago");
 				setLevel (8);
 				dispose();
 				new Sudoku();
 				break;
 			default:
+				JOptionPane.showMessageDialog(null, "Dasar Newbie");
 				setLevel (5);
 				dispose();
 				new Sudoku();
@@ -247,8 +272,8 @@ public class Sudoku extends JFrame {
 		}
 		closedCellsNum = level * 9;
         Random random = new Random();
-		int randomRow = 0;
-		int randomCol = 0;
+		int randomRow = -1;
+		int randomCol = -1;
 
 		for (int i = 0; i < closedCellsNum; i++) {
 			randomRow = random.nextInt(grid);
@@ -287,10 +312,10 @@ public class Sudoku extends JFrame {
 			try {
 				input = Integer.parseInt(source.getText());
 			} catch (NumberFormatException ex) {
-				JOptionPane.showMessageDialog(null, "Sorry, You should enter number from 1 to 9");
+				JOptionPane.showMessageDialog(null, "Input angka ngab");
 			}
 			// membandingkan antara angka yang diinputkan dan angka yang ada di puzzle
-			// jika benar, maka angka yang diinputkan akan berwarna hijau
+			// jika benar, maka angka yang diinputkan akan berwarna biru
 			// namun jika tidak, maka warna angka menjadi merah 
 			int firstRow = rowBoard / subgrid * subgrid;
             int firstCol = colBoard / subgrid * subgrid;
@@ -333,12 +358,10 @@ public class Sudoku extends JFrame {
 				}
 			}
 
-
 			if (winner) {
-				JOptionPane.showMessageDialog(null, "Congratulations, you WIN!");
+				JOptionPane.showMessageDialog(null, "Selamat ya!");
 			}
 		}
-
 	}
 
 	public static void main(String[] args) {
@@ -347,17 +370,19 @@ public class Sudoku extends JFrame {
 			@Override
 			public void run() {
 				if(args.length < 1 || args[0].contains("easy")) {
+					JOptionPane.showMessageDialog(null, "Dasar Newbie");
 					setLevel (5);
 				}
 
 				else if(args[0].contains("medium")) {
+					JOptionPane.showMessageDialog(null, "Sok Jago");
 					setLevel (7);
 				}
 
 				else if(args[0].contains("hard")) {
+					JOptionPane.showMessageDialog(null, "Ampun Bang Jago");
 					setLevel (8);
 				}
-					
 				new Sudoku();
 			}
 		});

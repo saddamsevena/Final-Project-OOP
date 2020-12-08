@@ -43,14 +43,4 @@ public class SudokuPuzzle {
     public static int[][] getPuzzle() { //mereturn puzzle sudoku 
         return generateSudoku(); 
     }
-
-    private static int[][] generateBlankPuzzle() {
-        for(int i=0; i<subgrid*subgrid; i++){
-            for(int j=0; j<subgrid*subgrid; j++) {
-                sudokupuzzle[i][j] = (i*subgrid + i/subgrid + j) % (subgrid*subgrid) + 1;
-            }
-        }
-        return sudokupuzzle;
-    }
-
 }
